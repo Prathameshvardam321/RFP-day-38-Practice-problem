@@ -1,0 +1,6 @@
+let range = 6
+let factorial = 1
+for(let i=range;i>0;i--){
+factorial = factorial*i
+}
+console.log("Factorial of "+range+" = "+factorial)

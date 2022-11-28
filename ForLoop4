@@ -1,0 +1,6 @@
+let rangeNumber = 10
+let result = ""
+for(var i=1;i<=rangeNumber;i++){
+    result = result+" "+1+"/"+i
+}
+console.log(result)

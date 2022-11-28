@@ -1,0 +1,21 @@
+let number = 110
+function checkPrime(inputNumber){
+let c =0;
+for (var i =2;i < inputNumber; i++){
+    if(inputNumber%i==0){
+        c = 1;
+        break
+    }
+}
+if(c==0){
+    console.log(inputNumber)
+    return true
+    }else{
+       return false
+    }
+}
+for(var i =2;i<number;i++){
+    if(number%i==0){
+        checkPrime(i)
+    }
+}

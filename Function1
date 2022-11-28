@@ -1,0 +1,27 @@
+function degCToDegF(temperature){
+let degF = temperature*9/5 + 32
+if(degF>=32 && degF<=212){
+    console.log(degF +" degF")
+}else{
+    console.log("Value is violating limits")
+}
+}
+function degFToDegC(temperature){
+let degC = (temperature-32)*0.555
+if(degC>=0 && degC<=100){
+    console.log(degC +" degC")
+}else
+{
+    console.log("Value is violating limits")
+}
+
+}
+let temperature = 100
+let input =2
+switch(input){
+case 1:degCToDegF(temperature)
+break
+case 2:degFToDegC(temperature)
+break
+}
+

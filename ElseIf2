@@ -1,0 +1,36 @@
+
+let a = 20
+let b = 17
+let c = 21
+let max = 0
+let min = 1000000000
+let operation1 = a + b * c
+let operation2 = a % b + c 
+let operation3 = c + a / b
+let operation4 = a * b + c
+console.log(operation1)
+console.log(operation2)
+console.log(operation3)
+console.log(operation4)
+
+if(operation1>max&&operation1>operation2&&operation1>operation3&&operation1>operation4){
+    max = operation1
+}else if(operation2>max&&operation2>operation1&&operation2>operation3&&operation2>operation4){
+    max = operation2
+}else if(operation3>max&&operation3>operation1&&operation3>operation1&&operation3>operation4){
+    max = operation3
+}else{
+    max = operation4
+}
+console.log(max)
+if (operation1<min&&operation1<operation2&&operation1<operation3&&operation1<operation4){
+    min = operation1
+}
+else if(operation2<min&&operation2<operation1&&operation2<operation3&&operation2<operation4){
+    min = operation2
+}else if(operation3<min&&operation3<operation1&&operation3<operation1&&operation3<operation4){
+    min = operation3
+}else{
+    min = operation4
+}
+console.log(min)
